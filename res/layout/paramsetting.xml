@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/paramsetting_choisegroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:checkedButton="@+id/paramsetting_lock"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/paramsetting_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="锁定" />
+
+        <RadioButton
+            android:id="@+id/paramsetting_unlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="解锁" />
+
+        <RadioButton
+            android:id="@+id/paramsetting_avglock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="航向锁定" />
+
+        <RadioButton
+            android:id="@+id/paramsetting_avgunlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="航向解锁" />
+
+        <RadioButton
+            android:id="@+id/paramsetting_autoland"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="自动降落" />
+    </RadioGroup>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="油门值:"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/paramsetting_energy"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="油门值"
+                    android:maxLength="4"
+                    android:numeric="integer" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="辅翼值:"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/paramsetting_bywing"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="辅翼值"
+                    android:maxLength="4"
+                    android:numeric="integer" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="方向值:"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/paramsetting_direction"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="方向值"
+                    android:maxLength="4"
+                    android:numeric="integer" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="升降值:"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/paramsetting_upanddown"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="升降值"
+                    android:maxLength="4"
+                    android:numeric="integer" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="第5通道值:"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/paramsetting_ch5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="第5通道值"
+                    android:maxLength="4"
+                    android:numeric="integer" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="第6通道值:"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/paramsetting_ch6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="第6通道值"
+                    android:maxLength="4"
+                    android:numeric="integer" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="第7通道值:"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/paramsetting_ch7"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="第7通道值"
+                    android:maxLength="4"
+                    android:numeric="integer" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/paramsetting_save"
+                    android:layout_width="200px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="保存" />
+
+                <Button
+                    android:id="@+id/paramsetting_reset"
+                    android:layout_width="200px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="重设" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
